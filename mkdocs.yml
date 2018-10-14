@@ -1,4 +1,0 @@
-site_name: PWG Software Requiremts
-theme: readthedocs
-markdown_extensions:
-  - admonition

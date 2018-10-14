@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="None">
+  
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <title>Lawyer-Up School of Law - PWG Software Requiremts</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Lawyer-Up School of Law";
+    var mkdocs_page_input_path = "index.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="js/jquery-2.1.1.min.js" defer></script>
+  <script src="js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="." class="icon icon-home"> PWG Software Requiremts</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href=".">Lawyer-Up School of Law</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#lawyer-up-school-of-law">Lawyer-Up School of Law</a></li>
+    
+
+    <li class="toctree-l2"><a href="#software-requirements-document">Software Requirements Document</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#table-of-contents">Table Of Contents</a></li>
+        
+            <li><a class="toctree-l3" href="#introduction">Introduction</a></li>
+        
+            <li><a class="toctree-l3" href="#system-description">System Description</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href=".">PWG Software Requiremts</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Lawyer-Up School of Law</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="lawyer-up-school-of-law">Lawyer-Up School of Law</h1>
+<h1 id="software-requirements-document">Software Requirements Document</h1>
+<p><strong>Authors:</strong> <em>Kenneth Devon Gaston &amp; Gilberto Diaz</em></p>
+<h2 id="table-of-contents">Table Of Contents</h2>
+<div class="toc">
+<ul>
+<li><a href="#lawyer-up-school-of-law">Lawyer-Up School of Law</a></li>
+<li><a href="#software-requirements-document">Software Requirements Document</a><ul>
+<li><a href="#table-of-contents">Table Of Contents</a></li>
+<li><a href="#introduction">Introduction</a><ul>
+<li><a href="#acronyms">Acronyms</a></li>
+<li><a href="#definitions">Definitions</a><ul>
+<li><a href="#users-roles">Users (Roles)</a></li>
+</ul>
+</li>
+<li><a href="#purpose">Purpose</a></li>
+<li><a href="#intended-audience">Intended Audience</a></li>
+<li><a href="#scope">Scope</a></li>
+</ul>
+</li>
+<li><a href="#system-description">System Description</a><ul>
+<li><a href="#use-cases">Use Cases</a><ul>
+<li><a href="#use-case-1-sme-creating-a-lesson">Use Case 1 - SME creating a lesson</a></li>
+<li><a href="#use-case-2-sme-evaluating-a-lesson">Use Case 2 - SME evaluating a lesson</a></li>
+<li><a href="#use-case-3-player-creating-an-account">Use Case 3 - Player creating an account</a></li>
+<li><a href="#use-case-4-player-taking-a-quiz-fully-dressed">Use Case 4 - Player taking a quiz (Fully Dressed)</a></li>
+</ul>
+</li>
+<li><a href="#entity-relationship-diagram">Entity Relationship Diagram</a></li>
+<li><a href="#communication-diagram">Communication Diagram</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="introduction">Introduction</h2>
+<h3 id="acronyms">Acronyms</h3>
+<ul>
+<li>Subject Matter Expert (SME)</li>
+<li>Phoenix Wright Game (PWG)</li>
+<li>Lawyer-Up School of Law (LSL)</li>
+<li>Content Management System (CMS)</li>
+<li>Public Access to Court Electronic Records (PACER)</li>
+</ul>
+<h3 id="definitions">Definitions</h3>
+<ul>
+<li>TODO</li>
+</ul>
+<p>[] Domain specific technical terms</p>
+<p>[] Synonyms</p>
+<p>[] Jargon</p>
+<p>[x] Users (Roles)</p>
+<p>[] Other</p>
+<h4 id="users-roles">Users (Roles)</h4>
+<ul>
+<li><strong>SME</strong> - SME or Subject Matter Experts are attorneys, law experts, professors in law, or any matter expert in the field of law. An SME is an employee of the LSL and is responsible for creation of lessons for the PWG.</li>
+<li><strong>Player</strong> - A player is any individual that is not a student of the LSL and is interested in playing the PWG. A player also could be an individual interested in more information about the LSL after playing the PWG. Finally, a player is an individual that is target by the marketing personnel after playing the PWG.</li>
+<li><strong>Marketing Personnel</strong> - Marketing personnel is a group of individuals working in the marketing department and are employees of the LSL. These people are responsible for evaluating players after a player completes a lesson. They also send marketing material and electronic communication to players that have engaged with PWG.</li>
+<li><strong>PACER</strong> - PACER is an electronic public access service of United States federal court documents. I allows users to obtain case and docket information from the United States district courts, United States courts of appeals, and United States bankruptcy courts.</li>
+</ul>
+<h3 id="purpose">Purpose</h3>
+<p>This document lays out the software requirements of an edutainment website/game that exposes various aspect of law and document processing based on real world cases. The game is meant to be used as a marketing tool to attract potential students to the university.</p>
+<h3 id="intended-audience">Intended Audience</h3>
+<p>All people that are interested in pursuing a law career.</p>
+<h3 id="scope">Scope</h3>
+<p>The lucrative Lawyer-Up School of Law wants to create an edutainment website that takes real-world cases to create an interactive game that engages with potential law students. People that chose to play will get a sense of real-world law cases through a series of interactive lessons and answering questions. The player might advance in the game by having correct answers and leveling up to more difficult questions. The goal of the game is to introduce an audience attracted to study law and potentially recruiting them to the Lawyer-Up School of Law.</p>
+<p><img alt="Scope Diagram" src="img/scope_diagram.png" /></p>
+<h2 id="system-description">System Description</h2>
+<p>The Phoenix Wright Game tries to attract people that might be interested in a Law career. The game has lessons that are focused on real-world cases that are retrieved from the Pacer system. Lessons have a series of quizzes or challenges ranked by difficulty and each quiz is composed of multiple choice questions. Lessons are ranked by difficulty as well. The player needs a score of 70% or greater to move to the next quiz. The player can move on to the next level once he finishes all quizzes in the current level.</p>
+<p>Once a player finishes a quiz, the quiz's score and user's profile information will be available to the Marketing team for them to assess. After performing a marketing analysis on the data, the Marketing team starts sending marketing material to all the players and potentially sending personalized letters to those carefully selected.</p>
+<h3 id="use-cases">Use Cases</h3>
+<p><img alt="User Case Diagram" src="img/use_case_diagram.jpg" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Are these use cases have to be changes to Rational format of I can keep them in table format?</p>
+</div>
+<h4 id="use-case-1-sme-creating-a-lesson">Use Case 1 - SME creating a lesson</h4>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Event</td>
+<td>Create a lesson</td>
+</tr>
+<tr>
+<td>Actor</td>
+<td>SME</td>
+</tr>
+<tr>
+<td>Basic Steps</td>
+<td>After evaluating a court case downloaded from the Pacer system, an SME create a lesson with its respective quizzes.</td>
+</tr>
+<tr>
+<td>Preconditions</td>
+<td>SME must be an employee of the University and authorize to work with the PWG.</td>
+</tr>
+<tr>
+<td>Alternate Steps</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Exceptions</td>
+<td>?</td>
+</tr>
+<tr>
+<td>Business Validation/Rules</td>
+<td>?</td>
+</tr>
+<tr>
+<td>Post-conditions</td>
+<td>?</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>I'm not sure about <code>Pre-conditions</code>, if it has to be specifically a system precondition
+or could be a business process step.</p>
+</div>
+<h4 id="use-case-2-sme-evaluating-a-lesson">Use Case 2 - SME evaluating a lesson</h4>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Event</td>
+<td>Evaluating a lesson</td>
+</tr>
+<tr>
+<td>Actor</td>
+<td>SME</td>
+</tr>
+<tr>
+<td>Basic Steps</td>
+<td>After a player finishes a lesson, an SME is prompt to evaluate that lesson.</td>
+</tr>
+<tr>
+<td>Preconditions</td>
+<td>A player must finish a lesson.</td>
+</tr>
+<tr>
+<td>Alternate Steps</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Exceptions</td>
+<td><code>Are we including exceptions in this table?</code></td>
+</tr>
+<tr>
+<td>Business Validation/Rules</td>
+<td><code>Are we including business rules in this table?</code></td>
+</tr>
+<tr>
+<td>Post-conditions</td>
+<td>?</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We need to ask about <code>Alternate Steps</code></p>
+</div>
+<h4 id="use-case-3-player-creating-an-account">Use Case 3 - Player creating an account</h4>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Event</td>
+<td>Player creating an account</td>
+</tr>
+<tr>
+<td>Actor</td>
+<td>Player</td>
+</tr>
+<tr>
+<td>Basic Steps</td>
+<td>Once a player lands in the registration page, the player can fill the form with a valid email address and a secure password and click the submit button.</td>
+</tr>
+<tr>
+<td>Preconditions</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Alternate Steps</td>
+<td>Player needs to confirm their email address by clicking the link sent to their email.</td>
+</tr>
+<tr>
+<td>Exceptions</td>
+<td>?</td>
+</tr>
+<tr>
+<td>Business Validation/Rules</td>
+<td>?</td>
+</tr>
+<tr>
+<td>Post-conditions</td>
+<td>After clicking the confirm link, player need to login into their account.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="use-case-4-player-taking-a-quiz-fully-dressed">Use Case 4 - Player taking a quiz (Fully Dressed)</h4>
+<ul>
+<li>Primary Role: Player</li>
+<li>Success scenario of player taking a quiz<ul>
+<li>Player logs in and navigates to the lesson's page.</li>
+<li>Player clicks in the next available quiz to start playing.</li>
+<li>Player answers all the questions and clicks the submit button.</li>
+<li>Player gets the grade back.</li>
+<li>Player can logout or keep playing for the next quiz available.</li>
+</ul>
+</li>
+<li>Variation Scenarios:<ul>
+<li>Variation 1: The Lesson is Unfinished<ul>
+<li>Player can finish the quiz and clicks the logout button.</li>
+<li>Player is warned that leaving the page will cause to lose all progress.</li>
+<li>Player logs out and is redirect to the home page.</li>
+</ul>
+</li>
+<li>Variation 2: Player fails the quiz<ul>
+<li>Player logs in, navigates to the lesson page and starts a quiz.</li>
+<li>Player answers all que questions in the quiz and clicks the submit button.</li>
+<li>The grade comes back and is lower than 70%.</li>
+<li>The player is prompt to review the material and re-take the quiz.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Exceptions<ul>
+<li>Exception 1: Player can't login <ul>
+<li>Player attempts to login three times without success.</li>
+<li>Player attempts to login the fourth time and the system redirects the player to a recovery password page.</li>
+<li>Player enters email address into the form and clicks the submit button.</li>
+<li>Player goes to his email address and click the link sent by the system to create a new password.</li>
+<li>Player enter a password twice and clicks the submit button.</li>
+<li>The system validates that both passwords match and updates player's password in the database.</li>
+<li>Players is redirect to the login page.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="entity-relationship-diagram">Entity Relationship Diagram</h3>
+<p><img alt="Entity Relationship Diagram" src="img/entity_relationship_diagram.jpg" /></p>
+<h3 id="communication-diagram">Communication Diagram</h3>
+<p><img alt="Communication Diagram" src="img/communication_diagram.jpg" /></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '.';</script>
+    <script src="js/theme.js" defer></script>
+      <script src="search/main.js" defer></script>
+
+</body>
+</html>
+
+<!--
+MkDocs version : 1.0.4
+Build Date UTC : 2018-10-14 20:37:42
+-->
