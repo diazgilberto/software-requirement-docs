@@ -267,6 +267,7 @@
 <li class="task-list-item">
 <p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Domain specific technical terms</p>
 </li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Entity</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Synonyms</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Jargon</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Users (Roles)</li>
@@ -280,15 +281,10 @@
 <li><strong>PACER</strong> - PACER is an electronic public access service of United States federal court documents. I allows users to obtain case and docket information from the United States district courts, United States courts of appeals, and United States bankruptcy courts. PACER will be the used as a source of data by the SMEs to create lessons.</li>
 </ul>
 <h4 id="entities-definitions">Entities Definitions</h4>
-<ul class="task-list">
-<li>
-<p>TODO:</p>
-</li>
-<li class="task-list-item">
-<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> User</p>
-</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Player History</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Lessons</li>
+<ul>
+<li>User - The entity <code>User</code> will represent all people that need to be registered in the LSL system for interacting with any software interface. In the current scenario, we have three users (Player, SMEs, Marketing Personnel) that will be interacting with PWG. SMEs and Marketing personnel are employees of LSL and Player which are not employees of LSL.</li>
+<li>Player History - The entity <code>Player History</code> will represent the progress each player have in the PWG. The Marketing personnel can retrieve score, lesson name, quiz number, and player information to perform marketing analysis.</li>
+<li>Lessons - The entity <code>Lessons</code> will represent the lessons, quizzes, and questions that constitute the PWG. These lessons are created by the SMEs from the court cases they download and carefully select from PACER.</li>
 </ul>
 <h3 id="purpose">Purpose</h3>
 <p>This document lays out the software requirements of an edutainment website/game that exposes various aspect of law and document processing based on real world cases. The game is meant to be used as a marketing tool to attract potential students to the university.</p>
