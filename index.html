@@ -225,8 +225,8 @@
 <li><a href="#introduction">Introduction</a><ul>
 <li><a href="#acronyms">Acronyms</a></li>
 <li><a href="#definitions">Definitions</a><ul>
-<li><a href="#users-roles">Users (Roles)</a></li>
-<li><a href="#entities">Entities</a></li>
+<li><a href="#users-roles-definitions">Users (Roles) Definitions</a></li>
+<li><a href="#entities-definitions">Entities Definitions</a></li>
 </ul>
 </li>
 <li><a href="#purpose">Purpose</a></li>
@@ -272,38 +272,36 @@
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Users (Roles)</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Other</li>
 </ul>
-<h4 id="users-roles">Users (Roles)</h4>
+<h4 id="users-roles-definitions">Users (Roles) Definitions</h4>
 <ul>
 <li><strong>SME</strong> - SME or Subject Matter Experts are attorneys, law experts, professors in law, or any matter expert in the field of law. An SME is an employee of the LSL and is responsible for the creation of lessons for the PWG.</li>
-<li><strong>Player</strong> - A player is any individual that is not a student of the LSL and is interested in playing the PWG. A player also could be an individual interested in more information about the LSL after playing the PWG. Finally, a player could also be an individual that is target by the marketing personnel after playing the PWG.</li>
-<li><strong>Marketing Personnel</strong> - Marketing personnel is a group of individuals working in the marketing department and are employees of the LSL. These people are responsible for evaluating players after a player completes a lesson. They also send marketing material and electronic communication to players that have engaged with PWG.</li>
-<li><strong>PACER</strong> - PACER is an electronic public access service of United States federal court documents. I allows users to obtain case and docket information from the United States district courts, United States courts of appeals, and United States bankruptcy courts.</li>
+<li><strong>Player</strong> - A player is any individual that is not a student of the LSL and is interested in playing the PWG. A player also could be an individual interested in more information about the LSL after playing the PWG. Finally, a player could also be an individual that is targeted by the marketing personnel after playing the PWG.</li>
+<li><strong>Marketing Personnel</strong> - Marketing personnel is a group of individuals working in the marketing department of the LSL and are employees of the LSL. These people are responsible for evaluating player's results after a player completes a lesson of the PWG. They also send marketing material and electronic communication to players that have engaged with the PWG.</li>
+<li><strong>PACER</strong> - PACER is an electronic public access service of United States federal court documents. I allows users to obtain case and docket information from the United States district courts, United States courts of appeals, and United States bankruptcy courts. PACER will be the used as a source of data by the SMEs to create lessons.</li>
 </ul>
-<h4 id="entities">Entities</h4>
-<ul>
-<li>TODO:<ul>
-<li>User</li>
-<li>Player History</li>
-<li>Lessons</li>
-</ul>
+<h4 id="entities-definitions">Entities Definitions</h4>
+<ul class="task-list">
+<li>
+<p>TODO:</p>
 </li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> User</p>
+</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Player History</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Lessons</li>
 </ul>
 <h3 id="purpose">Purpose</h3>
 <p>This document lays out the software requirements of an edutainment website/game that exposes various aspect of law and document processing based on real world cases. The game is meant to be used as a marketing tool to attract potential students to the university.</p>
 <h3 id="intended-audience">Intended Audience</h3>
 <p>All people that are interested in pursuing a law career.</p>
 <h3 id="scope">Scope</h3>
-<p>The lucrative Lawyer-Up School of Law wants to create an edutainment website that takes real-world cases to create an interactive game that engages with potential law students. People that chose to play will get a sense of real-world law cases through a series of interactive lessons and answering questions. The player might advance in the game by having correct answers and leveling up to more difficult questions. The goal of the game is to introduce an audience attracted to study law and potentially recruiting them to the Lawyer-Up School of Law.</p>
+<p>The lucrative Lawyer-Up School of Law wants to create an edutainment website that takes real-world cases from PACER's website to create an interactive game that engages potential law students. People that chose to play will get a sense of real-world law cases through a series of interactive lessons and answering questions. The player might advance in the game by having correct answers and leveling up to more difficult questions. The goal of the game is to introduce an audience attracted to study law and potentially recruiting them into the Lawyer-Up School of Law.</p>
 <p><img alt="Scope Diagram" src="img/scope_diagram.png" /></p>
 <h2 id="system-description">System Description</h2>
-<p>The Phoenix Wright Game tries to attract people that might be interested in a Law career. The game has lessons that are focused on real-world cases that are retrieved from the Pacer system. Lessons have a series of quizzes or challenges ranked by difficulty and each quiz is composed of multiple choice questions. Lessons are ranked by difficulty as well. The player needs a score of 70% or greater to move to the next quiz. The player can move on to the next level once he finishes all quizzes in the current level.</p>
-<p>Once a player finishes a quiz, the quiz's score and user's profile information will be available to the Marketing team for them to assess. After performing a marketing analysis on the data, the Marketing team starts sending marketing material to all the players and potentially sending personalized electronic material to those carefully selected.</p>
+<p>The PWG tries to attract people that might be interested in a Law career. The game has lessons that are focused on real-world cases that are retrieved from the Pacer system. Each case will be pull from PACER's website is carefully selected by the SMEs. Lessons have a series of quizzes or challenges ranked by difficulty and each quiz is composed of multiple choice questions. Lessons are ranked by difficulty as well. The player needs a score of 70% or greater to move to the next quiz. The player can move on to the next level once he finishes all quizzes in the current level.</p>
+<p>Once a player finishes a quiz, the quiz's score and user's profile information will be available to the Marketing team for them to assess. After performing a marketing analysis on the data, the Marketing team starts sending marketing material to all the players. The Marketing team will also carefully selects players to potentially sending personalized electronic material.</p>
 <h3 id="use-cases">Use Cases</h3>
 <p><img alt="User Case Diagram" src="img/use_case_diagram.jpg" /></p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Are these use cases have to be changes to Rational format of I can keep them in table format?</p>
-</div>
 <h4 id="use-case-1-sme-creating-a-lesson">Use Case 1 - SME creating a lesson</h4>
 <table>
 <thead>
@@ -323,7 +321,7 @@
 </tr>
 <tr>
 <td>Basic Steps</td>
-<td>After evaluating a court case downloaded from the Pacer system, an SME create a lesson with its respective quizzes.</td>
+<td>SME will carefully select and download a court case from PACER's website. After evaluating a court case an SME will create a lesson utilizing the CMS with its respective quizzes.</td>
 </tr>
 <tr>
 <td>Preconditions</td>
@@ -371,11 +369,11 @@ or could be a business process step.</p>
 </tr>
 <tr>
 <td>Basic Steps</td>
-<td>After a player finishes a lesson, an SME is prompted to evaluate that lesson.</td>
+<td>After a player finishes a quiz, an Marketing personnel is prompted to evaluate that lesson in the CMS. Based on some progress criteria established by the marketing team, the marketing personnel will select what kind of marketing material will be used with that particular player.</td>
 </tr>
 <tr>
 <td>Preconditions</td>
-<td>A player must finish a lesson.</td>
+<td>A player must finish a quiz.</td>
 </tr>
 <tr>
 <td>Alternate Steps</td>
@@ -418,7 +416,7 @@ or could be a business process step.</p>
 </tr>
 <tr>
 <td>Basic Steps</td>
-<td>Once a player lands in the registration page, the player can fill the form with a valid email address and a secure password and click the submit button.</td>
+<td>Once a player lands in the registration page, the player will fill the form with a valid email address and a secure password and click the submit button.</td>
 </tr>
 <tr>
 <td>Preconditions</td>
@@ -426,7 +424,7 @@ or could be a business process step.</p>
 </tr>
 <tr>
 <td>Alternate Steps</td>
-<td>Player needs to confirm their email address by clicking the link sent to their email.</td>
+<td>Player will receive an email to confirm their email.</td>
 </tr>
 <tr>
 <td>Exceptions</td>
@@ -438,11 +436,15 @@ or could be a business process step.</p>
 </tr>
 <tr>
 <td>Post-conditions</td>
-<td>After clicking the confirm link, player need to login into their account.</td>
+<td>After clicking the link, player will be redirect to the login page.</td>
 </tr>
 </tbody>
 </table>
 <h4 id="use-case-4-player-taking-a-quiz-fully-dressed">Use Case 4 - Player taking a quiz (Fully Dressed)</h4>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Do we need to change the steps for rational (prose) format instead?</p>
+</div>
 <ul>
 <li>Primary Role: Player</li>
 <li>Success scenario of player taking a quiz<ul>
