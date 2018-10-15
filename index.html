@@ -116,8 +116,11 @@
 <li><a href="#table-of-contents">Table Of Contents</a></li>
 <li><a href="#introduction">Introduction</a><ul>
 <li><a href="#acronyms">Acronyms</a></li>
-<li><a href="#definitions">Definitions</a></li>
+<li><a href="#definitions">Definitions</a><ul>
 <li><a href="#users-roles">Users (Roles)</a></li>
+<li><a href="#entities">Entities</a></li>
+</ul>
+</li>
 <li><a href="#purpose">Purpose</a></li>
 <li><a href="#intended-audience">Intended Audience</a></li>
 <li><a href="#scope">Scope</a></li>
@@ -157,12 +160,18 @@
 <li>[X] Users (Roles)</li>
 <li>[ ] Other</li>
 </ul>
-<h3 id="users-roles">Users (Roles)</h3>
+<h4 id="users-roles">Users (Roles)</h4>
 <ul>
-<li><strong>SME</strong> - SME or Subject Matter Experts are attorneys, law experts, professors in law, or any matter expert in the field of law. An SME is an employee of the LSL and is responsible for creation of lessons for the PWG.</li>
-<li><strong>Player</strong> - A player is any individual that is not a student of the LSL and is interested in playing the PWG. A player also could be an individual interested in more information about the LSL after playing the PWG. Finally, a player is an individual that is target by the marketing personnel after playing the PWG.</li>
+<li><strong>SME</strong> - SME or Subject Matter Experts are attorneys, law experts, professors in law, or any matter expert in the field of law. An SME is an employee of the LSL and is responsible for the creation of lessons for the PWG.</li>
+<li><strong>Player</strong> - A player is any individual that is not a student of the LSL and is interested in playing the PWG. A player also could be an individual interested in more information about the LSL after playing the PWG. Finally, a player could also be an individual that is target by the marketing personnel after playing the PWG.</li>
 <li><strong>Marketing Personnel</strong> - Marketing personnel is a group of individuals working in the marketing department and are employees of the LSL. These people are responsible for evaluating players after a player completes a lesson. They also send marketing material and electronic communication to players that have engaged with PWG.</li>
 <li><strong>PACER</strong> - PACER is an electronic public access service of United States federal court documents. I allows users to obtain case and docket information from the United States district courts, United States courts of appeals, and United States bankruptcy courts.</li>
+</ul>
+<h4 id="entities">Entities</h4>
+<ul>
+<li>User</li>
+<li>Player History</li>
+<li>Lessons</li>
 </ul>
 <h3 id="purpose">Purpose</h3>
 <p>This document lays out the software requirements of an edutainment website/game that exposes various aspect of law and document processing based on real world cases. The game is meant to be used as a marketing tool to attract potential students to the university.</p>
@@ -173,7 +182,7 @@
 <p><img alt="Scope Diagram" src="img/scope_diagram.png" /></p>
 <h2 id="system-description">System Description</h2>
 <p>The Phoenix Wright Game tries to attract people that might be interested in a Law career. The game has lessons that are focused on real-world cases that are retrieved from the Pacer system. Lessons have a series of quizzes or challenges ranked by difficulty and each quiz is composed of multiple choice questions. Lessons are ranked by difficulty as well. The player needs a score of 70% or greater to move to the next quiz. The player can move on to the next level once he finishes all quizzes in the current level.</p>
-<p>Once a player finishes a quiz, the quiz's score and user's profile information will be available to the Marketing team for them to assess. After performing a marketing analysis on the data, the Marketing team starts sending marketing material to all the players and potentially sending personalized letters to those carefully selected.</p>
+<p>Once a player finishes a quiz, the quiz's score and user's profile information will be available to the Marketing team for them to assess. After performing a marketing analysis on the data, the Marketing team starts sending marketing material to all the players and potentially sending personalized electronic material to those carefully selected.</p>
 <h3 id="use-cases">Use Cases</h3>
 <p><img alt="User Case Diagram" src="img/use_case_diagram.jpg" /></p>
 <div class="admonition note">
@@ -403,5 +412,5 @@ or could be a business process step.</p>
 
 <!--
 MkDocs version : 1.0.4
-Build Date UTC : 2018-10-15 14:22:18
+Build Date UTC : 2018-10-15 14:55:07
 -->
