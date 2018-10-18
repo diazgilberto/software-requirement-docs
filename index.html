@@ -465,6 +465,7 @@ or could be a business process step.</p>
 <li>Player logs in and navigates to the lesson's page.</li>
 <li>Player clicks in the next available quiz to start playing.</li>
 <li>Player answers all the questions and clicks the submit button.</li>
+<li>Player's score is stored into the database.</li>
 <li>Player gets the grade back.</li>
 <li>Player can logout or keep playing for the next quiz available.</li>
 </ul>
@@ -486,14 +487,11 @@ or could be a business process step.</p>
 </ul>
 </li>
 <li>Exceptions<ul>
-<li>Exception 1: Player can't login <ul>
-<li>Player attempts to login three times without success.</li>
-<li>Player attempts to login the fourth time and the system redirects the player to a recovery password page.</li>
-<li>Player enters email address into the form and clicks the submit button.</li>
-<li>Player goes to his email address and click the link sent by the system to create a new password.</li>
-<li>Player enter a password twice and clicks the submit button.</li>
-<li>The system validates that both passwords match and updates player's password in the database.</li>
-<li>Players is redirected to the login page.</li>
+<li>Exception 1: Database is offline when Player finishes quiz and clicks submit<ul>
+<li>Player clicks submit button after successfully finishes a quiz.</li>
+<li>The system attempts to store quiz's score into the database unsuccessfully.</li>
+<li>An exception message returns to the browser letting the player know that the communication with the database was unsuccessful. It will also let the player know that any progress made will not be lost and will be sync at next login.</li>
+<li>Next time player logs in, the player will see in the page a progress status of the game syncing with the database. If the database is online, the player will be notified that all pending progress is successfully saved in the database. If the database is offline, it will loop back to the previous step.</li>
 </ul>
 </li>
 </ul>
