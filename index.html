@@ -238,13 +238,18 @@
 <li><a href="#system-description">System Description</a><ul>
 <li><a href="#use-cases">Use Cases</a><ul>
 <li><a href="#use-case-1-sme-creating-a-lesson">Use Case 1 - SME creating a lesson</a></li>
-<li><a href="#use-case-2-sme-evaluating-a-lesson">Use Case 2 - SME evaluating a lesson</a></li>
+<li><a href="#use-case-2-marketing-personnel-evaluating-a-lesson">Use Case 2 - Marketing personnel evaluating a lesson</a></li>
 <li><a href="#use-case-3-player-creating-an-account">Use Case 3 - Player creating an account</a></li>
 <li><a href="#use-case-4-player-taking-a-quiz-fully-dressed">Use Case 4 - Player taking a quiz (Fully Dressed)</a></li>
 </ul>
 </li>
-<li><a href="#entity-relationship-diagram">Entity Relationship Diagram</a></li>
+<li><a href="#entity-relationship-diagram">Entity Relationship Diagram</a><ul>
+<li><a href="#acceptance-criteria-measurements">Acceptance Criteria Measurements</a></li>
+<li><a href="#er-tradeoffs">ER Tradeoffs</a></li>
+</ul>
+</li>
 <li><a href="#communication-diagram">Communication Diagram</a></li>
+<li><a href="#players-web-interface-state-diagram">Player's Web Interface State Diagram</a></li>
 </ul>
 </li>
 </ul>
@@ -261,19 +266,6 @@
 <li>Public Access to Court Electronic Records (PACER)</li>
 </ul>
 <h3 id="definitions">Definitions</h3>
-<ul class="task-list">
-<li>
-<p>TODO:gst</p>
-</li>
-<li class="task-list-item">
-<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Domain specific technical terms</p>
-</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Entity</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Synonyms</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Jargon</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Users (Roles)</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Other</li>
-</ul>
 <h4 id="users-definitions">Users Definitions</h4>
 <ul>
 <li><strong>SME</strong> - SME or Subject Matter Experts are attorneys, law experts, professors in law, or any matter expert in the field of law and en employee of the LSL.<ul>
@@ -281,15 +273,15 @@
 </ul>
 </li>
 <li><strong>Player</strong> - A player is any individual that is not a student of the LSL and is interested in playing the PWG. A player also could be an individual interested in more information about the LSL after playing the PWG. Finally, a player could also be an individual that is targeted by the marketing personnel after playing the PWG.<ul>
-<li><strong>Role</strong> -</li>
+<li><strong>Role</strong> - The player is not obligated but expected to interact with the PWG web interface, browse through lessons and play the game.</li>
 </ul>
 </li>
 <li><strong>Marketing Personnel</strong> - Marketing personnel is a group of individuals working in the marketing department of the LSL and are employees of the LSL. These people are responsible for evaluating player's results after a player completes a lesson of the PWG. They also send marketing material and electronic communication to players that have engaged with the PWG.<ul>
-<li><strong>Role</strong> - </li>
+<li><strong>Role</strong> - An individual part of the Marketing team is responsible for evaluating player's scores and profile and selecting the appropriate marketing material to send to the player.</li>
 </ul>
 </li>
 <li><strong>PACER</strong> - PACER is an electronic public access service of United States federal court documents. I allows users to obtain case and docket information from the United States district courts, United States courts of appeals, and United States bankruptcy courts. PACER will be the used as a source of data by the SMEs to create lessons.<ul>
-<li><strong>Role</strong> -</li>
+<li><strong>Role</strong> - None</li>
 </ul>
 </li>
 </ul>
@@ -301,8 +293,7 @@
 </ul>
 <h4 id="technical-definitions">Technical Definitions</h4>
 <ul>
-<li>Lesson - In the general sense, a lesson is a topic the player picks to learn. A lesson is made up by one or more quizzes. Lessons are ordered by difficulty and grouped by topic such as criminal or divorce.</li>
-<li>Quiz - In the general sense, a quiz is the short challenge the player will take. A quiz is made up by one or more questions that are ordered by difficulty.</li>
+<li>TODO:</li>
 </ul>
 <h3 id="purpose">Purpose</h3>
 <p>This document lays out the software requirements of an edutainment website/game that exposes various aspect of law and document processing based on real world cases. The game is meant to be used as a marketing tool to attract potential students to the university.</p>
@@ -359,12 +350,7 @@
 </tr>
 </tbody>
 </table>
-<div class="admonition info">
-<p class="admonition-title">Question?</p>
-<p>I'm not sure about <code>Pre-conditions</code>, if it has to be specifically a system precondition
-or could be a business process step.</p>
-</div>
-<h4 id="use-case-2-sme-evaluating-a-lesson">Use Case 2 - SME evaluating a lesson</h4>
+<h4 id="use-case-2-marketing-personnel-evaluating-a-lesson">Use Case 2 - Marketing personnel evaluating a lesson</h4>
 <table>
 <thead>
 <tr>
@@ -383,7 +369,7 @@ or could be a business process step.</p>
 </tr>
 <tr>
 <td>Basic Steps</td>
-<td>After a player finishes a quiz, an Marketing personnel is prompted to evaluate that lesson in the CMS. Based on some progress criteria established by the marketing team, the marketing personnel will select what kind of marketing material will be used with that particular player.</td>
+<td>After a player finishes a quiz, the Marketing team is prompted to evaluate that lesson in the CMS. Based on some progress criteria established by the marketing team, the marketing team member will select what kind of marketing material will be used with that particular player.</td>
 </tr>
 <tr>
 <td>Preconditions</td>
@@ -395,11 +381,11 @@ or could be a business process step.</p>
 </tr>
 <tr>
 <td>Exceptions</td>
-<td><code>Are we including exceptions in this table?</code></td>
+<td>?</td>
 </tr>
 <tr>
 <td>Business Validation/Rules</td>
-<td><code>Are we including business rules in this table?</code></td>
+<td>?</td>
 </tr>
 <tr>
 <td>Post-conditions</td>
@@ -407,10 +393,6 @@ or could be a business process step.</p>
 </tr>
 </tbody>
 </table>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>We need to ask about <code>Alternate Steps</code></p>
-</div>
 <h4 id="use-case-3-player-creating-an-account">Use Case 3 - Player creating an account</h4>
 <table>
 <thead>
@@ -455,10 +437,6 @@ or could be a business process step.</p>
 </tbody>
 </table>
 <h4 id="use-case-4-player-taking-a-quiz-fully-dressed">Use Case 4 - Player taking a quiz (Fully Dressed)</h4>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Do we need to change the steps for rational (prose) format instead?</p>
-</div>
 <ul>
 <li>Primary Role: Player</li>
 <li>Success scenario of player taking a quiz<ul>
@@ -472,7 +450,7 @@ or could be a business process step.</p>
 </li>
 <li>Variation Scenarios:<ul>
 <li>Variation 1: The Lesson is Unfinished<ul>
-<li>Player can finish the quiz and clicks the logout button.</li>
+<li>Player can't finish the quiz and clicks the logout button.</li>
 <li>Player is warned that leaving the page will cause to lose all progress.</li>
 <li>Player logs out and is redirect to the home page.</li>
 </ul>
@@ -499,8 +477,24 @@ or could be a business process step.</p>
 </ul>
 <h3 id="entity-relationship-diagram">Entity Relationship Diagram</h3>
 <p><img alt="Entity Relationship Diagram" src="img/entity_relationship_diagram.jpg" /></p>
+<h4 id="acceptance-criteria-measurements">Acceptance Criteria Measurements</h4>
+<ul>
+<li>The lessons and quizzes must always proceed in their intended order</li>
+<li>The quizzes must be intuitive to interact with for the user</li>
+<li>The quiz answers and results must not be vulnerable to modifications from non-administrative parties</li>
+<li>The answers submitted during quizzes must be evaluated within at most 0.5 seconds of submission.</li>
+<li>The Player’s History must be updated with the results of the evaluated quizzes within 0.7 seconds of said evaluation</li>
+<li>No score in the History can be lower than 0%</li>
+</ul>
+<h4 id="er-tradeoffs">ER Tradeoffs</h4>
+<ul>
+<li>The structure of each quiz is static in both its order and its content lieu of being randomized in both regards to ensure that the material cannot be memorized. We feel that this is acceptable because the lessons themselves are more concerned with getting people interested in both law and the school than serving as a fully educational format</li>
+<li>Failing a quiz forces a player to retake the lesson for the quiz instead of simply allowing them to retry the quiz. Lesson will be short and an option to speed up these sections can alleviate this issue, along with the fact that the order of and the content of the questions is static</li>
+</ul>
 <h3 id="communication-diagram">Communication Diagram</h3>
 <p><img alt="Communication Diagram" src="img/communication_diagram.jpg" /></p>
+<h3 id="players-web-interface-state-diagram">Player's Web Interface State Diagram</h3>
+<p><img alt="Player Web Interface State Diagram" src="img/state_diagram.jpg" /></p>
                 
                   
                 
