@@ -2,7 +2,7 @@
 
 **Authors:** *Kenneth Devon Gaston & Gilberto Diaz*
 
-> Web Version [Here](https://diazgilberto.github.io/software-requirement-docs/)
+> Web Version [Here](https://diazgilberto.github.io/software-requirement-docs)
 
 TODO:
 1. test
