@@ -427,29 +427,25 @@
 <h4 id="use-case-4-player-taking-a-quiz-fully-dressed">Use Case 4 - Player taking a quiz (Fully Dressed)</h4>
 <ul>
 <li>Primary Role: Player</li>
-<li>Success scenario of player taking a quiz<ul>
+<li>Success scenario of player taking a quiz</li>
 <li>Player logs in and navigates to the lesson's page.</li>
-<li>Player clicks in the next available quiz to start playing.</li>
+<li>Player clicks in the next available lesson to start playing.</li>
+<li>Player watches lesson, and is afterwards given a quiz based on what they learned</li>
 <li>Player answers all the questions and clicks the submit button.</li>
-<li>Player's score is stored into the database.</li>
-<li>Player gets the grade back.</li>
+<li>Player’s grade is stored in their Player_History.</li>
 <li>Player can logout or keep playing for the next quiz available.</li>
-</ul>
-</li>
-<li>Variation Scenarios:<ul>
+<li>Variation Scenarios:</li>
 <li>Variation 1: The Lesson is Unfinished<ul>
-<li>Player can't finish the quiz and clicks the logout button.</li>
-<li>Player is warned that leaving the page will cause to lose all progress.</li>
+<li>Player can finish the quiz and clicks the logout button.</li>
+<li>Player is warned that leaving the page will cause to lose all progress in the lesson.</li>
 <li>Player logs out and is redirect to the home page.</li>
 </ul>
 </li>
 <li>Variation 2: Player fails the quiz<ul>
 <li>Player logs in, navigates to the lesson page and starts a quiz.</li>
-<li>Player answers all que questions in the quiz and clicks the submit button.</li>
+<li>Player answers all questions in the quiz and clicks the submit button.</li>
 <li>The grade comes back and is lower than 70%.</li>
-<li>The player is prompted to review the material and re-take the quiz.</li>
-</ul>
-</li>
+<li>The player is prompted to review the material and retake the quiz.</li>
 </ul>
 </li>
 <li>Exceptions<ul>
