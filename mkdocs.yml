@@ -1,7 +1,7 @@
 site_name: PWG Software Requiremts
 site_url: 'https://diazgilberto.github.io/software-requirement-docs/'
 theme:
-  name: 'material'
+  name: 'readthedocs'
 extra_css:
   - css/custom.css
 extra_javascript:
